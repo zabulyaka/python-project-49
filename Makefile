@@ -12,3 +12,9 @@ package-install:
 
 upgrade:
 	uv tool upgrade hexlet-code
+
+lint:
+	uv run ruff check
+
+fix:
+	uv run ruff check --fix
