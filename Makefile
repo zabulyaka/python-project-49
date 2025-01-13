@@ -9,3 +9,6 @@ build:
 
 package-install:
 	uv tool install dist/*.whl
+
+upgrade:
+	uv tool upgrade hexlet-code
