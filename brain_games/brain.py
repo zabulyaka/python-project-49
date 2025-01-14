@@ -1,5 +1,4 @@
-from random import randint
-
+from brain_games.brain_data import get_expected_answer, get_game_data, get_rules
 from brain_games.brain_io import (
     get_user_answer,
     get_user_name,
@@ -13,25 +12,21 @@ from brain_games.brain_io import (
 )
 
 ROUNDS = 3
-RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_odd(num: int) -> bool:
-    return bool(num % 2)
-
-
-def guess_even():
+def run_game(game: str) -> None:
     welcome()
     user_name = get_user_name()
     greet(user_name)
-    print_rules(RULES)
+    rules = get_rules(game)
+    print_rules(rules)
     game_rounds = ROUNDS
     game_end = False
     while not game_end:
-        game_data = randint(1, 100)
-        print_game_data(str(game_data))
+        game_data = get_game_data(game)
+        print_game_data(game_data)
         user_answer = get_user_answer()
-        expected_answer = 'no' if is_odd(game_data) else 'yes'
+        expected_answer = get_expected_answer(game, game_data)
         round_won = user_answer == expected_answer
         if round_won:
             print_round_won()
