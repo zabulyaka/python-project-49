@@ -4,10 +4,10 @@ OPERATORS = ['+', '-', '*']
 
 
 def get_simple_expr() -> str:
-    number1 = str(randint(1, 100))
-    number2 = str(randint(1, 100))
+    num1 = str(randint(1, 100))
+    num2 = str(randint(1, 100))
     operator = choice(OPERATORS)
-    return f'{number1} {operator} {number2}'
+    return f'{num1} {operator} {num2}'
 
 
 def calc_expr(game_data: str) -> str:
