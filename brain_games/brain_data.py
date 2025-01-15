@@ -1,11 +1,13 @@
-from brain_games.games.calc import calc_expr, get_simple_expr
-from brain_games.games.even import eval_even, get_small_int
-from brain_games.games.gcd import get_gcd, get_two_ints
+from brain_games.games.calc import get_calc_data
+from brain_games.games.even import get_even_data
+from brain_games.games.gcd import get_gcd_data
+from brain_games.games.progression import get_progression_data
 
 ROUNDS = 3
 RULES_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
 RULES_CALC = 'What is the result of the expression?'
 RULES_GCD = 'Find the greatest common divisor of given numbers.'
+RULES_PROGRESSION = 'What number is missing in the progression?'
 GAME_ERROR = "Error: game doesn't match"
 
 
@@ -18,6 +20,8 @@ def get_rules(game: str) -> str:
             rules = RULES_CALC
         case 'gcd':
             rules = RULES_GCD
+        case 'progression':
+            rules = RULES_PROGRESSION
         case _:
             rules = GAME_ERROR
     return rules
@@ -31,17 +35,16 @@ def get_rounds() -> int:
 def get_data(game: str) -> tuple:
     game_data = ''
     expected_answer = ''
+    result = (game_data, expected_answer)
     match game:
         case 'even':
-            game_data = get_small_int()
-            expected_answer = eval_even(game_data)
+            result = get_even_data()
         case 'calc':
-            game_data = get_simple_expr()
-            expected_answer = calc_expr(game_data)
+            result = get_calc_data()
         case 'gcd':
-            game_data = get_two_ints()
-            expected_answer = get_gcd(game_data)
+            result = get_gcd_data()
+        case 'progression':
+            result = get_progression_data()
         case _:
-            game_data = GAME_ERROR
-            expected_answer = GAME_ERROR
-    return (game_data, expected_answer)
+            result = (GAME_ERROR, GAME_ERROR)
+    return result

@@ -5,9 +5,11 @@ def is_odd(num: int) -> bool:
     return bool(num % 2)
 
 
-def get_small_int() -> str:
-    return str(randint(1, 10))
-
-
-def eval_even(game_data: str) -> str:
-    return 'no' if is_odd(int(game_data)) else 'yes'
+def get_even_data() -> tuple:
+    num = ''
+    num_is_even = ''
+    result = (num, num_is_even)
+    num = randint(1, 10)
+    num_is_even = 'no' if is_odd(num) else 'yes'
+    result = (str(num), num_is_even)
+    return result

@@ -12,6 +12,9 @@ calc:
 	
 gcd:
 	uv run brain-gcd
+	
+progression:
+	uv run brain-progression
 
 build:
 	uv build
