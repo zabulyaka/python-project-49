@@ -14,3 +14,4 @@
 [![asciicast](https://asciinema.org/a/8cJMaWBEOtLKmVYS9ySMdOOi1.svg)](https://asciinema.org/a/8cJMaWBEOtLKmVYS9ySMdOOi1)
 ### Brain-prime
 [![asciicast](https://asciinema.org/a/NTQRG9kvNJ75SayPjlSodkFqr.svg)](https://asciinema.org/a/NTQRG9kvNJ75SayPjlSodkFqr)
+##### P.S. Autotests, please start!
