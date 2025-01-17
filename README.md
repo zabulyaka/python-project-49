@@ -8,7 +8,7 @@ Have fun!
 ### Installation:
 Once you have the directory cloned and unpacked on your device, do the following steps:
 
-Open the terminal window in your OS and open python-project-49 directory in the terminal. Then type:
+Open the terminal window in your OS and open *../python-project-49/* directory in the terminal. Then type:
 
 `make install`
 
@@ -18,7 +18,7 @@ Open the terminal window in your OS and open python-project-49 directory in the 
 
 `brain-even` (To run the game) 
 
-(To choose a different game, type the name of the game e.g. "brain-calc")
+(To choose a different game, enter the name of the game e.g. "brain-calc")
 
 ### Game list and descriptions:
 - Brain-even - *guess even number*
@@ -31,7 +31,7 @@ Open the terminal window in your OS and open python-project-49 directory in the 
 
 - Brain-prime - *guess prime number*
 >[!NOTE]
->This is a student project. All credits go to Hexlet team who belongs the idea and the major part of realization of this project.
+>This is a student project. All credits go to Hexlet team, to whom belongs the idea and the major part of realization of this project.
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/zabulyaka/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zabulyaka/python-project-49/actions)
