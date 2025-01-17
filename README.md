@@ -1,7 +1,7 @@
 # Brain-games
 A collection of simple games, where you have to use ~~a little luck~~ **>>MATH<<** to give the right answer. The game consists of three rounds, in each one you have to answer correctly, otherwise, you loose!
 
-Begin with cloning the repository unto your device. See below instruction for [installation](#installation) as well as short [descriptions](#game-list-and-descriptions) of the games. In the bottom of the page there are short video [clips](#brain-even) with demonstration of the process of installation and running games.
+Begin with cloning the repository into your device. See below instruction for [installation](#installation) as well as short [descriptions](#game-list-and-descriptions) of the games. In the bottom of the page there are short video [clips](#brain-even) with demonstration of the process of installation and running games.
 
 Have fun!
 
@@ -10,7 +10,7 @@ Once you have the directory cloned and unpacked on your device, do the following
 
 Open the terminal window in your OS and open python-project-49 directory in the terminal. Then type:
 
-`make init`
+`make install`
 
 `make build`
 
